@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.calculator.MainActivity">
+
+    <TextView
+
+        android:id="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số a: "
+        />
+    <TextView
+        android:id="@+id/b"
+        android:layout_below="@+id/a"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số b: "/>
+    <EditText
+        android:id="@+id/input_a"
+        android:layout_toRightOf="@+id/a"
+        android:padding="3dp"
+        android:layout_marginLeft="25dp"
+        android:hint="@string/hint_input_number"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/input_b"
+        android:layout_toRightOf="@+id/a"
+        android:padding="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:hint="@string/hint_input_number"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_below="@+id/input_b"
+        android:id="@+id/edt_result"
+        android:hint="Kết quả"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/input_b"
+        android:layout_marginTop="50dp"
+        android:text="Tổng 2 số"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAddButton"/>
+
+
+</RelativeLayout>

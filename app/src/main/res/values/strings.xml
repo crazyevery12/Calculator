@@ -1,0 +1,4 @@
+<resources>
+    <string name="hint_input_number">Nhập 1 số bất kỳ</string>
+    <string name="app_name">Calculator</string>
+</resources>
